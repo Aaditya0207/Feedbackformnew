@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        method="post"
+        action="https://script.google.com/macros/s/AKfycbw-dqVOaH2hZhbJWMJ78Rm2OqqBhqx1l4yLNZmoVGLJ0S542tM4EiskRlrxyM-RVBRp/exec"
+        name="contact-form"
+        id="contact-form"
+      >
+        <h4>Contact Us</h4>
+        <input type="text" name="your-name" placeholder="Name" required />
+        <input type="text" name="your-number" placeholder="Number" required />
+        <input type="email" name="your-email" placeholder="Email" required />
+        <textarea name="message" rows="7" placeholder="Your Message"></textarea>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+      <div id="loading-bar"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

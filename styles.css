@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#submit {
+  cursor: pointer; /* Set the cursor style to pointer by default */
+}
+.closed-pointer {
+  cursor: not-allowed; /* Set the cursor style to a closed hand pointer */
+}
+
+#loading-bar {
+  display: none;
+  height: 3px;
+  background-color: #007bff;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.container {
+  width: 500px;
+  padding: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background-color: #003b5b;
+}
+h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: white;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+#submit {
+  border: none;
+  background-color: orangered;
+  color: white;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#submit:hover {
+  background-color: #333333;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .container {
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* Further adjustments for very small screens */
+  .container {
+    padding: 10px; /* Reduce padding further */
+  }
+
+  h4 {
+    font-size: 20px; /* Decrease heading font size */
+  }
+}
